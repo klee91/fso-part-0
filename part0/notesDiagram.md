@@ -5,5 +5,6 @@ graph TD;
     C -- Success --> D[Accepts new note and posts content to the list of notes]
     C -- Error --> E[Does not accept new note and returns an error with description on the error or issue]
 
-    F[Page is refreshed with new GET request of notes]
+    D ----> F[Page is refreshed with new GET request of notes]
+    E ----> F[Page is refreshed with new GET request of notes]
 ```
